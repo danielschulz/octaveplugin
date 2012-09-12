@@ -20,6 +20,6 @@
   </actions>
 
   <extensions defaultExtensionNs="com.intellij">
-      <fileTypeFactory implementation="net.gazpacho.plugin.octaveplugin.OctaveFileTypeFactory"/>
+      <fileTypeFactory implementation="net.gazpacho.plugins.octave.OctaveFileTypeFactory"/>
   </extensions>
 </idea-plugin>
