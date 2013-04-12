@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package net.gazpacho.plugins.octave;
+package de.novensa.techniques.intellijidea.plugin.octaveplugin;
 
 import com.intellij.CommonBundle;
 import org.jetbrains.annotations.NonNls;
@@ -38,9 +38,13 @@ public class OctaveBundle {
     }
 
     private static ResourceBundle getBundle() {
+
         ResourceBundle bundle = null;
-        if (ourBundle != null) bundle = ourBundle.get();
-        if (bundle == null) {
+
+        if (null != ourBundle)
+            bundle = ourBundle.get();
+
+        if (null == bundle) {
             bundle = ResourceBundle.getBundle(PATH_TO_BUNDLE);
             ourBundle = new SoftReference<ResourceBundle>(bundle);
         }

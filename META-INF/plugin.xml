@@ -15,27 +15,27 @@
   -->
 
 <idea-plugin version="2">
-  <name>Octave</name>
-  <description>Plugin for Octave and MATLAB language support</description>
-  <version>0.1</version>
-  <vendor>Tom Conder</vendor>
+    <name>Octave Plugin</name>
+    <description>Plugin for Octave and MATLAB language support</description>
+    <version>0.2</version>
+    <vendor>Daniel Schulz</vendor>
 
-  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
-  <idea-version since-build="107.105"/>
+    <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="107.105"/>
 
-  <application-components>
-    <!-- Add your application components here -->
-  </application-components>
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
 
-  <project-components>
-    <!-- Add your project components here -->
-  </project-components>
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
 
-  <actions>
-    <!-- Add your actions here -->
-  </actions>
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
 
-  <extensions defaultExtensionNs="com.intellij">
-      <fileTypeFactory implementation="net.gazpacho.plugins.octave.OctaveFileTypeFactory"/>
-  </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+        <fileTypeFactory implementation="de.novensa.techniques.intellijidea.plugin.octaveplugin.OctaveFileTypeFactory"/>
+    </extensions>
 </idea-plugin>

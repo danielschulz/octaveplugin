@@ -14,11 +14,12 @@
  * limitations under the License.
  */
 
-package net.gazpacho.plugins.octave;
+package de.novensa.techniques.intellijidea.plugin.octaveplugin;
 
 import com.intellij.lang.Language;
 
 public class OctaveLanguage extends Language {
+
     private static final OctaveLanguage INSTANCE = new OctaveLanguage();
 
     private OctaveLanguage() {
